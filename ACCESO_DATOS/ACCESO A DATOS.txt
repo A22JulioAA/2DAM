@@ -1,0 +1,6 @@
+ACCESO A DATOS
+
+Ficheros:
+Si 
+
+JFileChooser -> Clase para escoger archivos de manera gráfica en Java
