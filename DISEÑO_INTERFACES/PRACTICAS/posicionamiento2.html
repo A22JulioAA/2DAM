@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandera de Guatemala</title>
+
+    <style>
+        /* FLOAT */
+
+        .contenedor-float {
+            border: 2px dotted red;
+            width: 600px;
+            height: 200px;
+            margin: 0 auto;
+            padding: 5%;
+        }
+
+        .panel1-float {
+            background-color: #f0e68c;
+            float: left;
+            width: 50%;
+            height: 100%;
+            border: 1px solid black;
+        }
+
+        .panel2-float {
+            background-color: #e0ffff;
+            height: 100%;
+            border: 1px solid red;
+        }
+
+        /* FLEX */
+
+        .contenedor-flex {
+            border: 2px dotted red;
+            width: 600px;
+            height: 200px;
+            margin: 1em auto;
+            padding: 5%;
+            display: flex;
+            justify-content: space-around
+        }
+
+        .panel1-flex {
+            background-color: #f0e68c;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        .panel2-flex {
+            background-color: #e0ffff;
+            width: 100%;
+            border: 1px solid red;
+        }
+
+        /* GRID */
+
+        .contenedor-grid {
+            border: 2px dotted red;
+            width: 600px;
+            height: 200px;
+            margin: 1em auto;
+            padding: 5%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .panel1-grid {
+            background-color: #f0e68c;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        .panel2-grid {
+            background-color: #e0ffff;
+            width: 100%;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 style="text-align: center;">Float</h2>
+    <section class="contenedor-float">
+        <div class="panel1-float"></div>
+        <div class="panel2-float"></div>
+    </section>
+
+    <h2 style="text-align: center;">Flex</h2>
+    <section class="contenedor-flex">
+        <div class="panel1-flex"></div>
+        <div class="panel2-flex"></div>
+    </section>
+
+    <h2 style="text-align: center;">Grid</h2>
+    <section class="contenedor-grid">
+        <div class="panel1-grid"></div>
+        <div class="panel2-grid"></div>
+    </section>
+
+</body>
+
+</html>

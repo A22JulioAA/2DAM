@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandera de Vietnam</title>
+
+    <style>
+        /* FLOAT */
+
+        .contenedor-float {
+            border: 2px solid black;
+            margin: 0 auto;
+            width: 400px;
+            height: 400px;
+            padding: 1em;
+            padding-bottom: 2em;
+        }
+
+        .left-panels {
+            float: left;
+            width: 50%;
+            height: 100%;
+        }
+
+        .panel1-float {
+            background-color: green;
+            height: 50%;
+            margin-bottom: 1em;
+            margin-right: 1em;
+        }
+
+        .panel2-float {
+            background-color: red;
+            height: 50%;
+            margin-right: 1em;
+        }
+
+        .right-panels {
+            width: 50%;
+            height: 100%;
+            float: left;
+        }
+
+        .panel3-float {
+            background-color: blue;
+            height: 25%;
+            margin-bottom: 1em;
+        }
+
+        .panel4-float {
+            background-color: blueviolet;
+            height: 75%;
+        }
+
+        /* FLEX */
+
+        .contenedor-flex {
+            border: 2px solid black;
+            margin: 0 auto;
+            width: 400px;
+            height: 400px;
+            padding: 1em;
+            padding-bottom: 2em;
+            display: flex;
+            justify-content: space-around;
+            gap: 1em;
+        }
+
+        .left-panels-flex {
+            width: 100%;
+            height: 100%;
+        }
+
+        .right-panels-flex {
+            width: 100%;
+            height: 100%;
+        }
+
+        .panel1-flex {
+            background-color: green;
+            height: 50%;
+            margin-bottom: 1em;
+        }
+
+        .panel2-flex {
+            background-color: red;
+            height: 50%;
+        }
+
+        .panel3-flex {
+            background-color: blue;
+            height: 25%;
+            margin-bottom: 1em;
+        }
+
+        .panel4-flex {
+            background-color: blueviolet;
+            height: 75%;
+        }
+
+        /* GRID */
+
+        .contenedor-grid {
+            border: 2px solid black;
+            margin: 0 auto;
+            width: 400px;
+            height: 400px;
+            padding: 1em;
+            display: grid;
+            grid-template-areas:
+                "a c"
+                "a d"
+                "b d"
+                "b d";
+        }
+
+        .panel1-grid {
+            background-color: green;
+            grid-area: a;
+            margin-bottom: 1em;
+            margin-right: 1em;
+        }
+
+        .panel2-grid {
+            background-color: red;
+            grid-area: b;
+            margin-right: 1em;
+        }
+
+        .panel3-grid {
+            background-color: blue;
+            grid-area: c;
+            margin-bottom: 1em;
+        }
+
+        .panel4-grid {
+            background-color: blueviolet;
+            grid-area: d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 style="text-align: center;">Float</h2>
+    <section class="contenedor-float">
+        <aside class="left-panels">
+            <div class="panel1-float"></div>
+            <div class="panel2-float"></div>
+        </aside>
+        <aside class="right-panels">
+            <div class="panel3-float"></div>
+            <div class="panel4-float"></div>
+        </aside>
+    </section>
+
+    <h2 style="text-align: center;">Flex</h2>
+    <section class="contenedor-flex">
+        <aside class="left-panels-flex">
+            <div class="panel1-flex"></div>
+            <div class="panel2-flex"></div>
+        </aside>
+        <aside class="right-panels-flex">
+            <div class="panel3-flex"></div>
+            <div class="panel4-flex"></div>
+        </aside>
+    </section>
+
+    <h2 style="text-align: center;">Grid</h2>
+    <section class="contenedor-grid">
+        <div class="panel1-grid"></div>
+        <div class="panel2-grid"></div>
+        <div class="panel3-grid"></div>
+        <div class="panel4-grid"></div>
+    </section>
+
+</body>
+
+</html>
