@@ -7,7 +7,85 @@
     <title>Bandera Malasia</title>
 
     <style>
+        /* FLOAT */
 
+        .contenedor-float {
+            height: 400px;
+            width: 600px;
+            border: 2px dotted black;
+            margin: 0 auto;
+            padding: 1em;
+        }
+
+        .panel1 {
+            background-color: #ff7f50;
+            float: left;
+            width: 100%;
+            height: 48%;
+            margin-bottom: 2%;
+        }
+
+        .panel2 {
+            background-color: #6495ed;
+            width: 100%;
+            height: 50%;
+            clear: both;
+        }
+
+        /* FLEX */
+
+        .contenedor-ejercicio1-flex {
+            height: 400px;
+            width: 600px;
+            border: 2px dotted black;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+            gap: 1em;
+        }
+
+        .panel-flex1 {
+            background-color: #ff7f50;
+            width: 100%;
+            height: 100%;
+        }
+
+        .panel-flex2 {
+            background-color: #6495ed;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* GRID */
+
+        .contenedor-ejercicio1-grid {
+            height: 400px;
+            width: 600px;
+            border: 2px dotted black;
+            margin: 0 auto;
+            display: grid;
+            grid-template-areas:
+                "a"
+                "b"
+            ;
+            gap: 1em;
+            padding: 1em;
+        }
+
+        .panel-grid1 {
+            background-color: #ff7f50;
+            width: 100%;
+            height: 100%;
+            grid: a;
+        }
+
+        .panel-grid2 {
+            background-color: #6495ed;
+            width: 100%;
+            height: 100%;
+            grid: b;
+        }
     </style>
 </head>
 
