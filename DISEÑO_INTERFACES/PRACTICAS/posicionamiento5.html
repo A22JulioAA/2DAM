@@ -7,81 +7,94 @@
     <title>Bandera Guatemala</title>
 
     <style>
-        .contenedor {
-            background-color: bisque;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); 
+            grid-template-rows: repeat(4, 1fr); 
+            gap: 10px; 
             width: 600px;
             height: 600px;
-            display: grid;
-            grid-template-areas:
-                "a b"
-            ;
         }
 
-        .columna1 {
-            grid: a;
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
         }
 
-        .columna1 .row1 {
-            background-color: aquamarine;
-            width: 100%;
-            height: 50%;
+        .lightgreen {
+            background-color: lightgreen;
+            grid-column: 1 / 4; 
+            grid-row: 1 / 3; 
         }
 
-        .columna1 .row2 {
-            width: 100%;
-            height: 50%;
-            display: grid;
-            grid-template-areas:
-                "a b"
-                "c b"
-            ;
+        .green {
+            background-color: green;
+            grid-column: 4 / 6; 
+            grid-row: 1 / 2; 
         }
 
-        .subrow1 {
+        .red {
             background-color: red;
-            grid: a;
-            width: 100%;
-            height: 100%;
+            grid-column: 1 / 2; 
+            grid-row: 3 / 4; 
         }
 
-        .subrow2 {
+        .magenta {
+            background-color: magenta;
+            grid-column: 2 / 4;
+            grid-row: 3 / 5; 
+        }
+
+        .orange {
             background-color: orange;
-            grid: c;
+            grid-column: 1 / 2; 
+            grid-row: 4 / 5;
         }
 
-        .subcolumna2 {
-            background-color: #f000ff;
-            grid: b;
-            height: 100%;
+        .blue {
+            background-color: blue;
+            grid-column: 4 / 6; 
+            grid-row: 2 / 4; 
         }
 
-        .columna2 {
-            grid: b;
+        .brown {
+            background-color: brown;
+            grid-column: 4 / 6; 
+            grid-row: 4 / 5; 
         }
+
     </style>
 </head>
 
 <body>
 
-    <h2 style="text-align: center;">Flex</h2>
-    <section class="contenedor">
-        <div class="columna1">
-            <div class="row1"></div>
-            <div class="row2">
-                <div class="subcolumna1">
-                    <row class="subrow1">Red</row>
-                    <row class="subrow2">Orange</row>
-                </div>
-                <div class="subcolumna2">Morao el que tengo aqui colgao</div>
-            </div>
-        </div>
-        <div class="columna2">
-            <div class="row">Verde militar</div>
-            <div class="row">Azul raro</div>
-            <div class="row">Color caca</div>
-        </div>
-    </section>
-    </section>
+    <div class="container">
+        <div class="box lightgreen"></div>
+        <div class="box green"></div>
+        <div class="box red"></div>
+        <div class="box magenta"></div>
+        <div class="box orange"></div>
+        <div class="box blue"></div>
+        <div class="box brown"></div>
+    </div>
 
 </body>
 
